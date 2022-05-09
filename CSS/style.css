@@ -4,7 +4,6 @@
 
 * {
   font-family: 'Oswald', sans-serif;
-  font-size: larger;
 
   color: #706e65;
 
@@ -19,6 +18,8 @@ html {
 .mainNav {
   display: flex;
   justify-content: center;
+
+  font-size: 120%;
 
   margin-right: 16px;
   margin-left: 16px;
@@ -70,7 +71,7 @@ img {
 
 h3 {
   color: #706e65;
-  font-size: 200%;
+  font-size: 150%;
 }
 
 
