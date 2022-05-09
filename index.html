@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malefirma</title>
+
+    <!--Link to CSS-->
+    <link href = "./CSS/style.css" rel = "stylesheet">
+    <link rel="stylesheet" href="./CSS/aos.css" /> <!--from: https://michalsnik.github.io/aos/ -->
+
+</head>
+<body>
+    <!--Nav bar-->
+    <div class="mainNav">
+        <div class="navEntry" id="_kontakt">Kontakt</div>
+        <div class="vl"></div>
+        <div class="navEntry" id="_tjenester">Tjenester</div>
+        <div class="vl"></div>
+        <div class="navEntry" id="_info">Info</div>
+    </div>
+
+    <!--Lines and image-->
+    <hr style="width:50%", size="4", color=#bab3b3>  
+    <img src = "./SVG/OLSEN-MALER.svg" alt="Logo" class="containerLogo"/>
+    <br>
+    <hr style="width:50%", size="4", color=#bab3b3>
+
+
+    <!--Contact info-->
+    <h3 id="_gotoKontakt">Kontakt</h3>
+    <div class="mainNav">
+        <div class="navEntry">Tlf: 980 83 793</div>
+        <div class="vl"></div>
+        <div class="navEntry">martinjobb98@hotmail.com</div>
+    </div>
+    <br>
+    <img src = "./SVG/arrow.svg"alt="Arrow" class="containerArrow"/>
+
+
+
+    <div class="lineBreak"></div>
+    <div class="lineBreak"></div>
+    <div class="lineBreak"></div>
+
+    
+
+    <div class="contentContaner" id="_gotoTjenester">
+        <h3>Tjenester: </h3>
+
+
+
+    </div>
+    
+
+    <div class="lineBreak"></div>
+    <div class="lineBreak"></div>
+
+    
+
+    <!--Info-->
+    <div class="contentContaner" id="_gotoInfo">
+        <div data-aos="zoom-in">
+            <h3>Våre amisjoner er å bli <span style="color: #4c4d45;">størst</span> og <span style="color: #4c4d45;">best</span> i vår branjse.</h3>
+        </div>
+        <br>
+        <div data-aos="zoom-in">
+            <h3>Vi setter <span style="color: #4c4d45;">godt</span> håndverk og <span style="color: #4c4d45;">fornøyde</span> kunder som hovedfokus!</h3>
+        </div>
+
+    </div>
+    <hr style="width:50%", size="4", color=#bab3b3>
+    <h2>Firmaet er eid av <span style="color: #4c4d45;">Martin Andersen Olsen</span> som er eneste ansatte pr dags dato</h2>
+
+    
+    <div class="lineBreak"></div>
+
+    <button></button>
+
+
+    <!--Initilize aos credit: https://michalsnik.github.io/aos/  -->
+    <script src="./JavaScript/aos.js"></script>
+    <script>
+        document.getElementById("_kontakt").addEventListener("click", goto1);
+        document.getElementById("_tjenester").addEventListener("click", goto2);
+        document.getElementById("_info").addEventListener("click", goto3);
+        function goto1() {document.getElementById("_gotoKontakt").scrollIntoView();}
+        function goto2() {document.getElementById("_gotoTjenester").scrollIntoView();}
+        function goto3() {document.getElementById("_gotoInfo").scrollIntoView();}
+
+        //Initilize aos
+        AOS.init();
+    </script>
+
+
+    
+
+
+</body>
+</html>
