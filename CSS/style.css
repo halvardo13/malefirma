@@ -71,7 +71,7 @@ img {
 
 h3 {
   color: #706e65;
-  font-size: 175%;
+  font-size: 150%;
 }
 
 
@@ -81,7 +81,8 @@ h3 {
   padding: 10px;
 }
 .emaiButtonContaner {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 25%;
   padding: 10px;
 }
